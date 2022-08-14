@@ -15,8 +15,11 @@
 
 3) Create alias for Laravel Sail, all following commands laucnhed from host machine:
         Try:
+        
         alias sail="bash ./vendor/bin/sail"
+        
         If doesn't work, try:
+        
         alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 
 4) Set up your environment correctly (.env)

@@ -3,7 +3,7 @@
 1) Download project or 
         git clone --branch master https://github.com/carlInvoker/testtask2.git
  And then enter the folder 
-        cd RSSparser 
+        cd testtask2
 2) Install composer dependencies with:
 
         docker run --rm \

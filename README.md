@@ -19,7 +19,7 @@
         If doesn't work, try:
         alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 
-4) Set up your environment correctly in .env
+4) Set up your environment correctly (.env)
 
 5) Run docker container with:
 

@@ -1,0 +1,32 @@
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-header > .btn {
+  max-width: 150px;
+}
+
+.submit-btn {
+    float: right;
+    margin-top: 30px;
+    min-width: 130px;
+}
+
+form > label {
+  margin-top: 15px;
+}
+
+.description {
+  max-width: 250px;
+  overflow: auto;
+}
+
+.adress {
+  max-width: 150px;
+  overflow: auto;
+}
+.content {
+padding-bottom: 30px !important;
+}

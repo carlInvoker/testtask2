@@ -1,3 +1,44 @@
+<h3>How to launch project</h3>
+
+1) Download project or 
+        git clone --branch master https://github.com/carlInvoker/testtask2.git
+ And then enter the folder 
+        cd RSSparser 
+2) Install composer dependencies with:
+
+        docker run --rm \
+        -u "$(id -u):$(id -g)" \
+        -v $(pwd):/var/www/html \
+        -w /var/www/html \
+        laravelsail/php81-composer:latest \
+        composer install --ignore-platform-reqs
+
+3) Create alias for Laravel Sail, all following commands laucnhed from host machine:
+        Try:
+        alias sail="bash ./vendor/bin/sail"
+        If doesn't work, try:
+        alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
+
+4) Set up your environment correctly in .env
+
+5) Run docker container with:
+
+        sail up -d 
+
+Don't run docker as root
+
+6) Install npm dependencies with:
+
+        sail npm install
+
+7) Run migrations with:
+
+        sail artisan migrate:refresh --seed
+
+This will add an admin:  </br>
+Email: admin@admin.com  </br>
+Password: admin222
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
